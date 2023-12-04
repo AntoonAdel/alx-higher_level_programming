@@ -1,19 +1,19 @@
 #include "lists.h"
 /**
- * recurPalindrome - checks if singly linked list is palindrome
+ * check_if_Palindrome - checks if singly linked list is palindrome
  * @one: pointer to head of singly linked list
  * @two: head of singly linked list
  * Return: 0 if it is not a palindrome, 1 if it is a palindrome
 */
 
-int recurPalindrome(listint_t **one, listint_t *two)
+int check_if_Palindrome(listint_t **one, listint_t *two)
 {
 	int result;
 
 	if (two == NULL)
 		return (1);
 
-	result = recurPalindrome(one, two->next);
+	result = check_if_Palindrome(one, two->next);
 	if (result == 0)
 		return (0);
 
@@ -33,5 +33,5 @@ int is_palindrome(listint_t **head)
 {
 	if (!head)
 		return (0);
-	return (recurPalindrome(head, *head));
+	return (check_if_Palindrome(head, *head));
 }
