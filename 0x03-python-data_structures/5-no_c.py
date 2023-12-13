@@ -4,4 +4,4 @@ def no_c(my_string):
     for cC in no_c_list:
         if cC == 'C' or cC == 'c':
             no_c_list.remove(cC)
-    return ("".join(no_c_list))
+    return (no_c_list)
