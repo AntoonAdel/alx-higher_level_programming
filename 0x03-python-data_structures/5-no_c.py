@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    clist = list(my_string)
-    [clist.remove(a) for a in clist if a == 'c' or a == 'C']
-    return("".join(clist))
+    no_c_list = list(my_string)
+    for cC in no_c_list:
+        if cC == 'C' or cC == 'c':
+            no_c_list.remove(cC)
+    return ("".join(no_c_list))
