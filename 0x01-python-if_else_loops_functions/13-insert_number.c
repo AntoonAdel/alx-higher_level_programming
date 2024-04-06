@@ -6,7 +6,6 @@
  * insert_node - inserts new node to linked list
  * @head: head of singly linked list
  * @number: value in singly linked list
- *
  * Return: the address of the new node, or NULL if it failed
  */
 listint_t *insert_node(listint_t **head, int number)
