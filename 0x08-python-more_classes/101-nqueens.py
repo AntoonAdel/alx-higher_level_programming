@@ -30,7 +30,7 @@ class NQueen:
         return 1
 
     def nQueen(self, k):
-        """ 
+        """
         Tries to place every Queen in the board
         Args:
             k: starting Queen from which to evaluate (should be 1)
@@ -62,7 +62,7 @@ N = sys.argv[1]
 
 try:
     N = int(N)
-except:
+except Exception:
     print("N must be a number")
     sys.exit(1)
 
