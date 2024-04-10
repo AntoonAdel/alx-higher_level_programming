@@ -60,14 +60,14 @@ class Square:
 
     def __str__(self):
         """ Prints square to stdout """
-        Sq_str = ""
+        S_str = ""
         if self.size == 0:
-            return (Sq_str)
+            return (S_str)
         else:
             for test3 in range(self.position[1]):
-                Sq_str += "\n"
+                S_str += "\n"
             for test4 in range(self.size):
-                Sq_str += "{}{}".format(' '*self.__position[0], '#'*self.__size)
+                S_str += "{}{}".format(' '*self.__position[0], '#'*self.__size)
                 if test4 != (self.size - 1):
-                    Sq_str += "\n"
-        return (Sq_str)
+                    S_str += "\n"
+        return (S_str)
