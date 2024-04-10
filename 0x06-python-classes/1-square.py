@@ -6,6 +6,7 @@ class Square:
        -You are not allowed to import any module
     """
 
+
     def __init__(self, size):
         """ Class Constructor"""
         self.__size = size
