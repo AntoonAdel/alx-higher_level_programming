@@ -65,3 +65,7 @@ class Rectangle:
                 if test != (self.height - 1):
                     Rec_str += "\n"
         return Rec_str
+
+    def __repr__(self):
+        """ Method that returns Object Representation as string """
+        return "Rectangle({:d}, {:d})".format(self.width, self.height)
