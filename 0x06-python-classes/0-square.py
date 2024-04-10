@@ -3,5 +3,6 @@
 
 class Square:
     """
-    Empty Class defining a square 
+    Empty Class defining a square
     """
+    pass
