@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+
+
+
 class LockedClass:
     """
     Prevent the user from instantiating new LockedClass attributes
@@ -6,4 +9,3 @@ class LockedClass:
     """
 
     __slots__ = ["first_name"]
-    
