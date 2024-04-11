@@ -14,10 +14,7 @@ class BaseGeometry:
         Validates Value name is assumed to be a string
         """
 
-        try:
-            if type(value) != int:
-                raise TypeError("{} must be an integer".format(name))
-            if value <= 0:
-                raise ValueError("{} must be greater than 0".format(name))
-        except Exception as exc:
-            return exc
+        if type(value) != int:
+            raise TypeError("{} must be an integer".format(name))
+        if value <= 0:
+            raise ValueError("{} must be greater than 0".format(name))
