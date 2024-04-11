@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Geometry Class raising an exception """
 
+
 class BaseGeometry:
     """ Geometry Class """
 
