@@ -24,8 +24,8 @@ class Student:
             attrs(list) -> List of attribute to be retrieved
         """
 
-        if (type(attrs) == list and
-                all(type(element) == str for element in attrs)):
+        if (isinstance(attrs) == list and
+                all(isinstance(element) == str for element in attrs)):
             return {key: getattr(self, key)
                     for key in attrs if hasattr(self, key)}
         return self.__dict__
