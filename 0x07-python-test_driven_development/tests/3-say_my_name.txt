@@ -11,8 +11,8 @@ Usage:
 Test cases: 
     >>> say_my_name = __import__('3-say_my_name').say_my_name
 
-    >>> say_my_name("John", "Hesham")
-    'My name is John Hesham'
+    >>> say_my_name("John", "Doe")
+    'My name is John Doe'
 
     >>> say_my_name("Bruce", "Willies")
     'My name is Bruce Willies'
@@ -52,7 +52,7 @@ Test cases:
     ...
     TypeError: say_my_name() missing 1 required positional argument: 'first_name'
 
-    >>> say_my_name(name, "Hesham")
+    >>> say_my_name(name, "Doe")
     Traceback (most recent call last):
     ...
     NameError: name 'name' is not defined
@@ -60,5 +60,5 @@ Test cases:
     >>> say_my_name(str(30), str(32))
     'My name is 30 32'
 
-    >>> say_my_name("", "Anton")
-    'My name is  Anton'
+    >>> say_my_name("", "Doup")
+    'My name is  Doup'
