@@ -3,7 +3,7 @@
 
 
 import unittest
-max_integer = __import__('6-max-integer').max_integer
+max_integer = __import__('6-max_integer').max_integer
 
 
 class TestMax_Integer(unittest.TestCase):
