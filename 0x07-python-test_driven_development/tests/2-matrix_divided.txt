@@ -77,7 +77,7 @@ Dividing a matrix which some of its elements aren't integer/float numbers:
 
 Passing a matrix which one of its elements is an empty list:
 
-    >>> matrix_divided([[2.1, 5.8], [], [10, -3]], 8)
+    >>> matrix_divided([[2.1, 5.8], [10, -3]], 8)
     Traceback (most recent call last):
     	      ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
